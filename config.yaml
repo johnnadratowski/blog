@@ -1,4 +1,3 @@
-baseURL: http://johnnadratowski.github.io
-disablePathToLower: true
 languageCode: en-us
 title: John Nadratowski
+theme: hello-programmer

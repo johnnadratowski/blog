@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+
+{{ partial "post.html" . }}
+
+<div class="post-comment">
+  {{ template "_internal/disqus.html" . }}
+</div>
+
+<div class="paging post-paging">
+  {{ if .PrevInSection }}
+  <a class="left" href="{{ .PrevInSection.Permalink }}" rel="prev">
+    <i class="fa fa-caret-left" aria-hidden="true"></i> <span>{{ .PrevInSection.Title }}</span>
+  </a>
+  {{ end }}
+  {{ if .NextInSection }}
+  <a class="right" href="{{ .NextInSection.Permalink }}" rel="next">
+    <span>{{ .NextInSection.Title }}</span> <i class="fa fa-caret-right" aria-hidden="true"></i>
+  </a>
+  {{ end }}
+</div>
+
+{{ partial "footer.html" . }}
