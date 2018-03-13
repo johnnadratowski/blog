@@ -2,7 +2,10 @@
 * HELLO-PROGRAMMER Theme CSS
 */
 
+@import url(//cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.css);
 @import url(//cdnjs.cloudflare.com/ajax/libs/spoqa-han-sans/2.1.1/css/SpoqaHanSans-kr.min.css);
+/* @import url(//rsms.me/inter/inter-ui.css); */
+
 * {
   font-family: 'Spoqa Han Sans', 'Sans-serif';
 }
@@ -48,9 +51,14 @@ a, a:visited {
 }
 
 code {
-  background-color: #F5F5F5;
-  border-radius: 3px;
-  padding: 3px;
+  font-family: Hack, monospace;
+  font-size: 18px;
+  padding: 5px;
+}
+
+pre code * {
+  font-family: Hack, monospace;
+  font-size: 18px;
 }
 
 blockquote {
