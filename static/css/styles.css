@@ -50,15 +50,23 @@ a, a:visited {
   text-decoration: none;
 }
 
-code {
-  font-family: Hack, monospace;
-  font-size: 18px;
-  padding: 5px;
+pre {
+  overflow: hidden;
 }
 
 pre code * {
   font-family: Hack, monospace;
   font-size: 18px;
+}
+
+code {
+  display: block;
+  font-family: Hack, monospace;
+  font-size: 18px;
+  line-height: 28px;
+  overflow: auto;
+  padding: 5px;
+  width: 100%;
 }
 
 blockquote {

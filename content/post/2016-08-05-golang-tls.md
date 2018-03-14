@@ -37,7 +37,7 @@ The [Golang Docs for TLS][golang-tls] docs are a little sparse, so I tried to fi
 information elsewhere that had some good examples.  After finding [this gist][tls-golang-gist]
 I had enough for the simplest (read: insecure) TLS client implementation. 
 
-{{< highlight go >}}
+{{< highlight golang >}}
 if c.useTLS {
     conn, err = tls.Dial("tcp", url.Host, &tls.Config{
         MinVersion: tls.VersionTLS10,
@@ -79,7 +79,7 @@ cp ./neo4j.key ./neo4j.cert /path/to/neo4j/certificates/
 
 I updated the go code to have the following implementation, based on another [gist][ca-cert-gist]:
 
-{{< highlight go >}}
+{{< highlight golang >}}
 if c.useTLS {
     config := &tls.Config{
         MinVersion: tls.VersionTLS10,
